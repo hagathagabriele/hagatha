@@ -21,19 +21,20 @@
     align-items: center;
   }
 
-  .container_imagem{
+.container_imagem{
    padding: 1em;
   }
    
 .lista_menu{
     display: none;
     position: absolute;
-    top: 100%;#000
+    top: 100%#000;
     width: 60vw;
   }
 
 .lista-menu_titulo {
     color:var(--laranja);
+    font-weight: 700;
 }
 
 .lista-menu_link {
@@ -43,4 +44,20 @@
     background-clip: text;
     text-transform: uppercase;
 }
+
+.container_botão:checked ~ .lista-menu {
+  display: block;
+}
+
+.lista-menu_titulo,
+.lista-menu_item {
+  padding: 1em;
+  background-color: var(--branco);
+}
+
+.container_botão {
+  display: none;
+}
+
+
 
