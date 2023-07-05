@@ -57,6 +57,9 @@
      <!-- Slider main container -->
 <div class="swiper">
      <!-- Additional required wrapper -->
+     <!-- If we need pagination -->
+     <div class="swiper-pagination"></div>
+
      <div class="swiper-wrapper">
      <!-- Slides -->
      <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache Kafka e spring boot da AluraBooks"></div>
@@ -65,23 +68,33 @@
      
      ...
      </div>
-     <!-- If we need pagination -->
-     <div class="swiper-pagination"></div>
  
      <!-- If we need navigation buttons -->
      <div class="swiper-button-prev"></div>
      <div class="swiper-button-next"></div>
  
-     <!-- If we need scrollbar -->
-     <div class="swiper-scrollbar"></div>
 </div>
+     <div class="card">
+       <div class="card_descrição">
+         <div class="descriçao">
+            <h3 class="descriçao_titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição_titulo-livro">Angular 11 e Firebase</h2>
+            <p class="descrição_texto">Construindo uma aplicação integrada com a plataforma  do Google.</p>
+         </div>
+         <img src="img/Card Interesse Angular.svg" class="descrição_imagem">
+       </div>
+     </div>
    </section>
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script>
            const swiper = new Swiper('.swiper', {
            spaceBetween: 10,
            slidesPerView: 3,
-         });
+           pagination: {
+             el: '.swiper-pagination',
+             type: 'bullets',
+        },
+     });
    </script>
    
    </body>
