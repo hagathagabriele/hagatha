@@ -16,3 +16,17 @@ body {
     font-weight: 400;
 }
 
+.card_descrição{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card_botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
