@@ -1,12 +1,15 @@
 @import url("styles/header.css");
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
 :root{
     --cor-de-fundo:#EBECEE;
     --branco:#FFFFFF;
     --laranja:#EB9B00;
     --azul-degrade:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins";
+    --azul: #002f52;
 }
 
 body {
@@ -29,4 +32,24 @@ body {
 
 .botoes {
     display: flex;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.botoes_item {
+    margin: 0 0.5em;
+}
+
+.botoes_ancora {
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
 }
